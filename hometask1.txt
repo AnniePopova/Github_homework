@@ -1,0 +1,354 @@
+GIT Homework 1
+
+Для выполнения задания у вас должен быть установлен для Windows - GitBash.
+Создан аккаунт в GitHub
+
+Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+Как отправить ДЗ на проверку.
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+ 5. Клонировать репозиторий JSON на локальный компьютер: 
+$ git clone https://github.com/AnniePopova/JSON.git
+Cloning into 'JSON'...
+warning: You appear to have cloned an empty repository.
+
+ 6. Внутри локального JSON создать файл “new.json”: 
+$ cd JSON/
+$ touch new.json
+
+ 7. Добавить файл под гит:
+$ git add new.json
+
+ 8. Закоммитить файл:
+$ git commit -m "new"
+[main (root-commit) 161dd7b] new
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.json
+
+ 9. Отправить файл на внешний GitHub репозиторий:
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 223 bytes | 223.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AnniePopova/JSON.git
+ * [new branch]      main -> main
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON:
+$ cat > new.json
+{
+        "name": "Anna",
+        "age": "27",
+        "pets": "none",
+        "salary": "$5000000000"
+}
+
+ 11. Отправить изменения на внешний репозиторий:
+$ git add new.json
+$ git commit -m "new"
+[main d1b8249] new
+ 1 file changed, 6 insertions(+)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AnniePopova/JSON.git
+   161dd7b..d1b8249  main -> main
+
+ 12. Создать файл preferences.json:
+$ touch preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON:
+$ cat > preferences.json
+{
+        "favourite_movie": "Gone with the wind",
+        "favourite_series": "La casa de papel",
+        "favourite_season": "summer",
+        "I_want_to_visit": [
+                        "1st_priority": "Italy",
+                        "2nd_proirity": "Spain"
+                        ]
+}
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON:
+$ cat > skills.json
+{
+        "skills": [
+        "test design techniques",
+        "git",
+        "postman"
+        ]
+}
+ 15. Отправить сразу 2 файла на внешний репозиторий:
+$ git add preferences.json skills.json
+$ git commit -m 'Some changes'
+[main ff58cfd] Some changes
+ 2 files changed, 16 insertions(+)
+ create mode 100644 preferences.json
+ create mode 100644 skills.json
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 541 bytes | 541.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AnniePopova/JSON.git
+   d1b8249..ff58cfd  main -> main
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 20. Синхронизировать внешний и локальный репозиторий JSON:
+$ git pull
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 9 (delta 3), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), 2.58 KiB | 132.00 KiB/s, done.
+From https://github.com/AnniePopova/JSON
+   ff58cfd..c294e7a  main       -> origin/main
+Updating ff58cfd..c294e7a
+Fast-forward
+ bug_report.json | 26 ++++++++++++++++++++++++++
+ 1 file changed, 26 insertions(+)
+ create mode 100644 bug_report.json
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+ 22. Клонировать репозиторий XML на локальный компьютер:
+$ git clone https://github.com/AnniePopova/XML.git
+Cloning into 'XML'...
+warning: You appear to have cloned an empty repository.
+
+ 23. Внутри локального XML создать файл “new.xml”:
+$ cd XML
+$ touch new.xml
+
+ 24. Добавить файл под гит:
+$ git add new.xml
+
+ 25. Закоммитить файл:
+$ git commit -m "new"
+[main (root-commit) bf3b526] new
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.xml
+
+ 26. Отправить файл на внешний GitHub репозиторий:
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 222 bytes | 222.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AnniePopova/XML.git
+ * [new branch]      main -> main
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML:
+$ cat > new.xml
+<info>
+	<title>Personal_Info</title>
+	<body>
+        	<name>Anna</name>
+       		<age>27</age>
+        	<pets>none</pets>
+        	<salary>$500000000</salary>
+	</body>
+</info>
+
+ 28. Отправить изменения на внешний репозиторий:
+$ git add new.xml
+$ git commit -m "new"
+[main aa0eab0] new
+ 1 file changed, 9 insertions(+)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 358 bytes | 358.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AnniePopova/XML.git
+   bf3b526..aa0eab0  main -> main
+
+ 29. Создать файл preferences.xml:
+$ touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML:
+$ cat > preferences.xml
+<preferences>
+        <title>Preferences</title>
+        <body>
+                <movie>Gone_with_the_wind</movie>
+                <series>La_casa_de_papel</series>
+                <meal>borsch</meal>
+                <season>summer<season>
+                <country>Spain</country>
+        </body>
+</preferences>
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML:
+$ touch skills.xml
+$ cat > skills.xml
+<?xml version="1.0" encoding="windows-1251"?>
+<body>
+   <title lang="en">Skills</title>
+   <text>
+1.      test design techniques;
+2.      git;
+3.      postman
+   </text>
+</body>
+
+ 32. Сделать коммит в одну строку:
+$ git add .
+
+ 33. Отправить сразу 2 файла на внешний репозиторий:
+$ git commit -m 'Some changes'
+[main df07578] Some changes
+ 2 files changed, 19 insertions(+)
+ create mode 100644 preferences.xml
+ create mode 100644 skills.xml
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 612 bytes | 612.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AnniePopova/XML.git
+   aa0eab0..df07578  main -> main
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 38. Синхронизировать внешний и локальный репозиторий XML:
+$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.86 KiB | 100.00 KiB/s, done.
+From https://github.com/AnniePopova/XML
+   df07578..fce0f1a  main       -> origin/main
+Updating df07578..fce0f1a
+Fast-forward
+ bug_report.xml | 25 +++++++++++++++++++++++++
+ 1 file changed, 25 insertions(+)
+ create mode 100644 bug_report.xml
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+ 2. Клонировать репозиторий TXT на локальный компьютер:
+$ git clone https://github.com/AnniePopova/TXT.git
+Cloning into 'TXT'...
+warning: You appear to have cloned an empty repository.
+
+ 3. Внутри локального TXT создать файл “new.txt”:
+$ touch new.txt
+
+ 4. Добавить файл под гит:
+$ git add new.txt
+
+ 5. Закоммитить файл:
+$ git commit -m "new"
+[main (root-commit) 894bd52] new
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.txt
+
+ 6. Отправить файл на внешний GitHub репозиторий:
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 222 bytes | 222.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AnniePopova/TXT.git
+ * [new branch]      main -> main
+
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT:
+$ cat > new.txt
+Name: Anna,
+Age: 27,
+Pets: none,
+Salary: $500000000000000
+
+ 8. Отправить изменения на внешний репозиторий:
+$ git add new.txt
+$ git commit -m "new"
+[main ee296c0] new
+1 file changed, 4 insertions(+)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 296 bytes | 296.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AnniePopova/TXT.git
+   894bd52..ee296c0  main -> main
+
+ 9. Создать файл preferences.txt:
+$ touch preferences.txt
+
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT:
+$ cat > preferences.txt
+Movie: Gone with the wind,
+Series: La casa de papel,
+Food: borsch,
+Season: summer,
+Country: Spain
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT:
+$ touch skills.txt
+$ cat > skills.txt
+Git,
+Postman,
+Test design techniques
+
+ 12. Сделать коммит в одну строку:
+$ git add .
+$ git commit -m 'Some changes'
+[main 78579f6] Some changes
+ 2 files changed, 8 insertions(+)
+ create mode 100644 preferences.txt
+ create mode 100644 skills.txt
+
+ 13. Отправить сразу 2 файла на внешний репозиторий:
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 462 bytes | 462.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AnniePopova/TXT.git
+   ee296c0..78579f6  main -> main
+
+ 14. На веб интерфейсе создать файл bug_report.txt.
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий TXT:
+$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.89 KiB | 149.00 KiB/s, done.
+From https://github.com/AnniePopova/TXT
+   78579f6..323ae2b  main       -> origin/main
+Updating 78579f6..323ae2b
+Fast-forward
+ bug_report.txt | 28 ++++++++++++++++++++++++++++
+ 1 file changed, 28 insertions(+)
+ create mode 100644 bug_report.txt
+
